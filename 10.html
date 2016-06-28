@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+.box{position: absolute;width: 199px;height: 199px;background-color: red;}
+.c{position: absolute;bottom: 0;right: 0;background-color: blue;width: 19px;height: 19px;}
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<!-- IE6下绝对定位元素父级宽高是奇数,绝对定位元素的right和bottom值会有1px的偏差 -->
+		<div class="c">
+			
+		</div>
+	</div>
+</body>
+</html>

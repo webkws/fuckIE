@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+li{list-style: none;
+	
+*vertical-align: middle;
+}
+*{margin: 0;padding: 0;}
+ul{width: 300px;}
+li{line-height: 30px;height: 30px;border: 1px solid red;}
+li a{float: left;}
+li span{float: right;}
+/*此时 li与li之间会有4px的间隙问题，解决问题方法：，前边样式加*，说明是IE6识别的，*/
+	</style>
+
+</head>
+<body>
+	<ul>
+		<li><a href="">左边</a><span>右边</span></li>
+		<li><a href="">左边</a><span>右边</span></li>
+		<li><a href="">左边</a><span>右边</span></li>
+		<li><a href="">左边</a><span>右边</span></li>
+	</ul>
+</body>
+</html>

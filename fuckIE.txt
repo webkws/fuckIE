@@ -1,0 +1,45 @@
+H5标签兼容。
+
+元素浮动之后,能设置宽度的话就给元素加宽度.如果需要宽度是内容撑开,就给它里边的块元素加上浮动;
+
+第一块元素浮动,第二块元素加margin值等于第一块元素,在IE6下会有间隙问题;
+
+IE6下子元素超出父级宽高，会把父级的宽高撑开
+
+p 包含块元素嵌套规则。
+margin兼容性问题
+display:inline-block
+IE6 最小高度问题
+IE6 双边距
+li里元素都浮动 li 在IE6 7  下方会产生4px间隙问题
+浮动元素之间注释，导致多复制一个文字问题
+IE6 7 父级元素的overflow:hidden 是包不住子级的relative
+IE6下绝对定位元素父级宽高是奇数,绝对定位元素的right和bottom值会有1px的偏差
+IE6下绝对定位元素和浮动元素并列绝对定位元素消失
+IE6 下input的空隙
+IE6 下 输入类型表单控件背景问题
+hack 黑客？ （原意：修改）
+	针对不同的浏览器写不同的CSS 样式的过程，就叫CSS hack!
+	
+
+	\9 所有的IE10及之前
+	+ * IE7及ie7以下的ie浏览器认识	
+	_IE6及ie6的ie浏览器认识
+
+
+	远离css hack，有益身心健康！
+
+IE6不支持png24 图片。
+
+解决方案：
+JS插件(问题:不能处理body之上png24)
+	DD_belatedPNG.fix('xxx');
+
+原生滤镜
+	_background:none;_filter : progid:DXImageTransform.Microsoft.AlphaImageLoader(src="XX.png", sizingMethod="crop");
+
+默认 < 类型 < class < id < style(行间) < !important 
+
+
+!important  提升样式优先级权重
+

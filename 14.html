@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+div{width: 200px;height: 200px;background-color: blue;background-color: red\9;}
+
+	</style>
+</head>
+<body>
+	<!-- CSS Hack
+ IE6-9可以加前缀*，
+ IE10以前 可以加  blue\9 6-10都显示蓝色了。
+  IE7以及IE7一下识别*
+  IE6以及IE6以下识别_
+  写的顺序要注意，后边的要覆盖前边的。
+  color:blue
+  color:blue\9
+  *color:blue
+  _color:blue
+  不到万不得已 尽量不要使用hack
+	 -->
+	 <div></div>
+</body>
+</html>

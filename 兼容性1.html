@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	.box{width: 400px;border: 1px solid yellow;overflow: hidden;/*overflow也可以清除浮动，但是不如伪类好。*/}
+	.left{float: left;background-color: blue;}
+	.right{float: right;background-color: yellow;}
+	h2{height: 30px;/*float: left;*/}/*此时，浮动就失效了。*/
+	/*解决方案，h2也float也left。*/
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="left">
+			<h2>左边</h2>
+		</div>
+		<div class="right">
+			<h2>右边</h2>
+		</div>
+	</div>
+</body>
+</html>

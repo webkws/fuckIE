@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+.box{width: 500px;}
+.left{width: 200px;height:200px;background-color: red;float: left;}
+/*IE中left和right会有空隙，解决方案，不建议这么写。非得解决的话，float:left;*/
+.right{width: 200px;height:200px;background-color: blue;margin-left: 200px;/*float: left;*/}
+
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="left"></div>
+		<div class="right"></div>
+	</div>
+</body>	
+</html>

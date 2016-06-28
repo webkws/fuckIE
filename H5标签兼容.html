@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<script type="text/javascript" src="html5shiv.js">
+		// document.createElement('header');
+		// document.createElement('section');
+		// document.createElement('footer');
+	</script>
+	
+	<style type="text/css">
+
+header{width: 100px;height: 100px;background-color: red;display: block;}
+section{width: 100px;height: 100px;background-color: yellow;display: block;}
+footer{width: 100px;height: 100px;background-color: blue;display: block;}
+	</style>
+	
+</head>
+<body>
+	<header>header</header>
+	<section>section</section>
+	<footer>footer</footer>
+</body>
+</html>
+<!-- /*IE6不会识别H5的很多新标签，这时候就要用JS动态创建自定义标签了。*/ -->
+<!-- /*又由于自定义创建的标签为内联元素，所以tsyle里要display改变一下,这样每次动态创建太麻烦，使用框架即可。html5shiv*/ -->
